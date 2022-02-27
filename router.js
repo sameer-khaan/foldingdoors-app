@@ -6,11 +6,10 @@ const router = express.Router();
 const orders = require("./controllers/orders");
 const payments = require("./controllers/payments");
 
-router.get("/api/v1/", (request, response) => {
-    response.status(200).send({
-        header: 'Success',
-        body: 'working!',
-    });
+router.get("/", (req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('It\'s Working!\n');
 });
 
 // Orders
