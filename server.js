@@ -1,8 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const dotenv = require('dotenv');
+dotenv.config();
 const logger = require("morgan");
 const router = require("./router");
-const dotenv = require('dotenv');
 const predefinedHeaders = require("./controllers/predefinedHeaders");
 
 // Express Server Instance
@@ -47,7 +48,6 @@ app.use((req, res) => {
   });
 });
 
-dotenv.config();
 // set port
 const serverPort = process.env.PORT || 5000;
 
