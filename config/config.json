@@ -1,0 +1,40 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "foldingdoors",
+    "host": "127.0.0.1",
+    "dialect": "mariadb",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    },
+    "logQueryParameters": true,
+    "operatorsAliases": 0
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mariadb",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    },
+    "logQueryParameters": true,
+    "operatorsAliases": 0
+  },
+  "production": {
+    "username": "f5QicLd3",
+    "password": "ZQ3VNoAWUNoALUxL",
+    "database": "hJK4Zdi0",
+    "host": "localhost",
+    "dialect": "mariadb",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    },
+    "operatorsAliases": 0
+  }
+}

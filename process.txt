@@ -1,0 +1,21 @@
+mkdir
+cd
+npm init
+$ npm install --save express body-parser morgan
+#START APPLICATION
+npm start server
+#OR
+npm run dev
+#Sequelize Setup
+$ npm install -g sequelize-cli
+$ npm install --save sequelize
+$ npm install --save mysql2
+$ npm install --save mariadb
+$ sequelize init // final, Initializes project with sequelize cli
+# Use this to create a model and migration entry then update both according to your needs 
+$ sequelize model:create --name Company --attributes name:string
+#or manually create a model and use below commands
+#Run following command to create migration file and create our own entry according to your model
+sequelize migration:create --name create_abc_table
+#for migration:
+$ sequelize db:migrate
